@@ -3,6 +3,7 @@
   --light-color: #a5abc0;
   --back: #e6f1f0;
   --link: #305dbe;
+  --link-dark: #254997;
 }
 
 * {
@@ -43,6 +44,15 @@ p {
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+  color: var(--link);
+}
+
+a:hover {
+  color: var(--link-dark);
+}
+
 footer {
   height: 100px;
   width: 100%;
@@ -59,7 +69,5 @@ footer small {
 }
 
 footer small a {
-  text-decoration: none;
   font-weight: bold;
-  color: var(--link);
 }
