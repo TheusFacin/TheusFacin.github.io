@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./assets/styles.css" />
+
+    <title>Pi</title>
+  </head>
+  <body>
+    <h1>Estimativa de Pi</h1>
+
+    <main>
+      <form id="form">
+        <div class="input">
+          <input type="number" name="n" id="n-input" placeholder="n" />
+          <button type="submit">Estimar Pi</button>
+        </div>
+
+        <div class="check-group">
+          <label>
+            <input type="checkbox" id="check-a" value="A" checked />
+            A - Estimar um valor de pi com base em n medidas
+          </label>
+          <label>
+            <input type="checkbox" id="check-b" value="B" checked />
+            B - Estimar 100 valores de pi
+          </label>
+          <label>
+            <input type="checkbox" id="check-c" value="C" checked />
+            C - Estimar 101 médias de 4 valores de pi
+          </label>
+        </div>
+      </form>
+
+      <div id="result"></div>
+    </main>
+
+    <script src="./assets/helpers.js"></script>
+    <script src="./assets/piEstimative.js"></script>
+    <script src="./assets/render.js"></script>
+  </body>
+</html>
